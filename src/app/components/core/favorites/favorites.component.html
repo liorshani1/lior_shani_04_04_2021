@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="title">My favorites</h3>
+      <ul class="list-group">
+        <div class="row">
+          <div class="col-8  ul-list">
+            <li *ngFor="let option of favorites" class="list-group-item">
+              {{ option.location.name }}
+              <mat-icon class="favorite-icon heart"
+                (click)="setFavorite(option)"
+                [ngClass]="{ 'red-heart': option.isFavorite }"
+                >favorite_border</mat-icon
+              >
+            </li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>

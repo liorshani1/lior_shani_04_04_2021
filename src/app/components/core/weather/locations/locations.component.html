@@ -1,0 +1,46 @@
+
+<div class="container">
+   
+    <div class="row">
+      <div class="col-md-9">
+        <h3 class="title">Weather forecast</h3>
+        <div class="autocomplete-container">
+          <div class="form-group">
+            <form [formGroup]="locationForm" class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="City"
+                (keyup)="this.wasValSelected = false"
+                [formControl]="locationForm.get('name')"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="weather-body-container">
+          <div>
+            <div class="autocomplete-container">
+              <app-weather-body></app-weather-body>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+      <div class="col-md-3 location-list-container ">
+        <div>
+          <ul class="list-group ul-list "
+            (scroll)="onScroll($event)"
+          >
+            <li class="list-item "
+              *ngFor="let option of filteredOptions"
+              (click)="onLocationSelected(option)"
+            >
+              {{ option["name"] }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

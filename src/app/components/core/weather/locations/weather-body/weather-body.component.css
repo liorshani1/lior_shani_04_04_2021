@@ -1,34 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;overflow: hidden }
-
-.centerlize {
-    align-items: center;
-    min-height: 200px;
-    justify-content: center!important;
-    display: flex!important;
-    min-width: 500px;
+.heart{
+    font-size: 40px;
+    cursor: pointer;
 }
-.title{
-    color:#007bff
+.heart:hover{
+    font-size: 50px;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;    
 }
-.sub-title{
-    color:#958e8e;
+.red-heart{
+    color: red;
 }
-
-.mid-title{
-    color:#1b1a1a;
-    font-weight: 600;
-}
-
-.ul-list {
-    min-height: 600px;
-    height: 100vh;
-    overflow-y: auto;
-    font-size: 16px;
-  }
-
 
 
 @keyframes shake {

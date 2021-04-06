@@ -1,0 +1,39 @@
+.autocomplete-container {
+  align-items: center;
+  min-height: 100px;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.weather-body-container {
+  height: 250px;
+  background-color: rgba(23, 232, 240, 0.1);
+  border: 1px solid #e5e5e5;
+}
+
+.location-list-container {
+  border-left: 1px solid #ccc;
+
+}
+.ul-list {
+  min-height: 600px;
+  height: auto;
+  overflow-y: auto;
+  width: 250px;
+  padding: 50px 0;
+  font-size: 16px;
+
+}
+
+li {
+  border-bottom: 1px solid #e5e5e5;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+li:hover {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+

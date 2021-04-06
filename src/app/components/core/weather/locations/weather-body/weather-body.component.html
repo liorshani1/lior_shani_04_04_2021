@@ -1,0 +1,36 @@
+<div *ngIf="data" class="row centerlize">
+  <div class="col-md-9">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="title">{{ locationName }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 sub-title">
+        {{ data.temperature }}
+        <span
+          class="wob_t mid-title"
+          style="display: inline"
+          aria-label="°Celsius"
+          aria-disabled="true"
+          >°C</span
+        >
+      </div>
+      <div class="col-md-7 sub-title">{{ data.weatherText }}</div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <mat-icon  class="heart"
+    (click)="setFavorite()" 
+    [ngClass]="{ 'red-heart': isFavorite }">favorite_border</mat-icon>
+  </div>
+</div>
+
+<!-- 
+favorite: {id: 2, locationKey: 126995, isFavorite: false}
+id: 2
+isFavorite: false
+locationKey: 126995
+locationKey: "126995"
+temperature: 22.7
+weatherText: "Partly sunny" -->

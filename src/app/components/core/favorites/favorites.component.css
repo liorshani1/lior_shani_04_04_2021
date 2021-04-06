@@ -1,0 +1,14 @@
+.heart{
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 30px;
+    float: right;
+}
+.heart:hover{
+    font-size: 30px;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;    
+}
+.red-heart{
+    color: red;
+}
